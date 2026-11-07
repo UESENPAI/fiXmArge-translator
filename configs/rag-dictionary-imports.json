@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "base": {
+    "lexicon": {
+      "path": "data/processed/lexicon.jsonl",
+      "sha256": "ff86606bb85523198c1ce6a5c753846d9e27e790402f939a03947f8ac2eb6ba8",
+      "bytes": 296001
+    },
+    "rules": {
+      "path": "data/processed/rules.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "asankilp-english-csv",
+      "format": "csv",
+      "language": "en",
+      "path": "data/raw/source-candidates/asankilp-en.csv",
+      "sha256": "f36662b1f6041a9c8bde1bec3a2a7b0489bef07b7671ab1ac7464fbe40371f36",
+      "bytes": 14496,
+      "source_manifest": {
+        "path": "data/raw/source-candidates/manifest.json",
+        "sha256": "7a3b5be9f533f0f2b272b11518e27dbc8f883f0d23e8765935ed8b28332e712b",
+        "bytes": 1343
+      },
+      "source_url": "https://github.com/Asankilp/fiXmArge-dictionary",
+      "revision": "d096099c03a46fa13ffc50186bd3eaec6aafbe4d",
+      "expected_headers": [
+        "Majo-ish",
+        "Meaning",
+        "Origination"
+      ],
+      "columns": {
+        "form": "Majo-ish",
+        "meaning": "Meaning",
+        "etymology": "Origination"
+      },
+      "skip_forms": [
+        "Conjuctions"
+      ],
+      "review_status": "unreviewed_source_candidate",
+      "rights_status": "not_cleared"
+    },
+    {
+      "id": "dc-manosaba-13256",
+      "format": "claims_json",
+      "language": "ko",
+      "path": "data/research/source-candidates/ko-lexical-claims.json",
+      "sha256": "3a75d128a484e44e1aaeb5e0fd560ef794706467e5723199098b76c95052e5e5",
+      "bytes": 1717,
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=manosaba&no=13256",
+      "columns": {
+        "form": "form",
+        "meaning": "ko"
+      },
+      "review_status": "unreviewed_source_claims",
+      "rights_status": "not_cleared"
+    }
+  ]
+}

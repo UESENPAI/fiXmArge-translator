@@ -1,0 +1,67 @@
+{
+  "as_of": "2026-11-05",
+  "sources": [
+    {
+      "id": "hecate-csv",
+      "url": "https://github.com/Hecate2/fiXmArge-dictionary",
+      "revision": "3df086be595c47a4dbbf97982feb2c2de0c9cf69",
+      "type": "fan_transcription",
+      "license": "not_specified",
+      "redistribution": "not_cleared",
+      "notes": "331 rows, 326 distinct spellings. Confirmed transcription conflicts exist.",
+      "training_eligible": false,
+      "training_basis": "Official guideline section 6 (updated 2026-10-21) prohibits official-content ML training; no individual permission is established for these game-derived sources."
+    },
+    {
+      "id": "japanese-wordbook",
+      "url": "https://docs.google.com/spreadsheets/d/1ytGU7wmmOpmEegbIkkoFhcjkxeAKvC31B597HVFE9HI/edit",
+      "type": "fan_research",
+      "license": "not_specified",
+      "redistribution": "not_cleared",
+      "notes": "Read Me explicitly marks meanings/etymology as independent research; reading_origin is field-level provenance. Exported full workbook with 337 non-header rows.",
+      "training_eligible": false,
+      "training_basis": "Official guideline section 6 (updated 2026-10-21) prohibits official-content ML training; no individual permission is established for these game-derived sources."
+    },
+    {
+      "id": "zpdic-5729",
+      "url": "https://zpdic.ziphil.com/dictionary/5729",
+      "type": "fan_dictionary",
+      "author": "tacoruru",
+      "license": "not_specified",
+      "redistribution": "not_cleared",
+      "notes": "363 words/1 sentence. Creator says based on the wordbook with official setting material reflected; original rights attributed to Re,AER/Acacia. Only selected entries crosschecked; full dataset not fetched.",
+      "training_eligible": false,
+      "training_basis": "Official guideline section 6 (updated 2026-10-21) prohibits official-content ML training; no individual permission is established for these game-derived sources."
+    },
+    {
+      "id": "official-guidelines",
+      "url": "https://manosaba.com/guidelines",
+      "type": "official_rights_guidelines",
+      "notes": "Read directly in browser 2026-11-05: section 6 explicitly prohibits official-content generative-AI/ML training data use/provision. Section 9 also sets separate fan-app terms."
+    },
+    {
+      "id": "bilibili-ost-parallel-candidate",
+      "url": "https://www.bilibili.com/video/BV1CjshzuEBi/",
+      "type": "fan_subtitles",
+      "status": "discovered_not_imported",
+      "notes": "Original uploader says fiXmArge/Japanese subtitles derive from official soundtrack booklet. Not imported or treated as a downloadable licensed parallel corpus.",
+      "training_eligible": false,
+      "training_basis": "Official guideline section 6 (updated 2026-10-21) prohibits official-content ML training; no individual permission is established for these game-derived sources."
+    },
+    {
+      "id": "japanese-research-book",
+      "url": "https://isdn.jp/2784874501013",
+      "type": "fan_research_book",
+      "status": "metadata_only",
+      "notes": "No purchased/paywalled pages extracted."
+    },
+    {
+      "id": "new-standard-witch-language",
+      "url": "https://www.bilibili.com/opus/1142918534408437762",
+      "type": "fan_hypotheses",
+      "status": "discovered_not_imported",
+      "training_eligible": false,
+      "training_basis": "Official guideline section 6 (updated 2026-10-21) prohibits official-content ML training; no individual permission is established for these game-derived sources."
+    }
+  ]
+}

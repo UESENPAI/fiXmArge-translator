@@ -1,0 +1,17 @@
+{
+  "model_name": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "model_license": "Apache-2.0",
+  "output_dir": "artifacts/qwen3-1.7b-fixmarge-qlora",
+  "max_length": 768,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "max_steps": 100,
+  "learning_rate": 0.0001,
+  "eval_steps": 25,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "seed": 42,
+  "push_to_hub": false
+}

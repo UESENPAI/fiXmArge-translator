@@ -1,0 +1,11 @@
+# Direct dependencies: requirements-train.txt snapshot plus the reviewed Gradio UI.
+# This does not claim a fully locked transitive environment or tested cloud GPU.
+torch==2.8.0
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.10.1
+bitsandbytes==0.48.1
+safetensors==0.6.2
+huggingface-hub==0.35.3
+Jinja2==3.1.6
+gradio==5.49.1

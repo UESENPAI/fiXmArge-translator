@@ -1,0 +1,20 @@
+{
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "model_license": "Apache-2.0",
+  "output_dir": "artifacts/qwen3-4b-wordnet-en-ja-lora-v1",
+  "data_scope": "commercially_reusable_english_japanese_wordnet_lexical_instruction_tuning",
+  "evaluation_scope": "Held-out WordNet synset groups for lexical translation/definition tasks; not fiXmArge or sentence translation accuracy.",
+  "max_length": 384,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "max_steps": 256,
+  "learning_rate": 2e-05,
+  "eval_steps": 128,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "seed": 42,
+  "push_to_hub": false,
+  "eval_batch_size": 4
+}

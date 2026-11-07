@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-11-05",
+  "purpose": "local_inference_evaluation_candidates",
+  "contains_lyrics": false,
+  "training_eligible": false,
+  "tracks": [
+    {
+      "id": "lavi-bavellabion",
+      "title": "LaVI-Bavellabion",
+      "role": "primary_fixmarge_evaluation",
+      "songwriter": "SLAVE.V-V-R",
+      "game_vocal": "三木谷奈々",
+      "language": "fiXmArge",
+      "sources": [
+        {
+          "kind": "artist_original_synth_video",
+          "url": "https://www.youtube.com/watch?v=z3oD2EFjRpY"
+        },
+        {
+          "kind": "official_distributor_soundtrack",
+          "url": "https://linkco.re/pUuQPTzb?lang=ja"
+        },
+        {
+          "kind": "official_lyric_video_candidate",
+          "url": "https://www.youtube.com/watch?v=88kosMxgsZw",
+          "status": "link_discovered; direct subtitle text not imported"
+        }
+      ],
+      "todo": [
+        "Align source segments with official Japanese translation privately",
+        "Separate original synth and game vocal versions",
+        "Deduplicate repeated chorus",
+        "Review Korean/English references; do not use dictionary exact-match as lyric quality"
+      ]
+    },
+    {
+      "id": "madear-madear",
+      "title": "MAdEaR MAdEaR",
+      "role": "primary_fixmarge_evaluation",
+      "songwriter": "SLAVE.V-V-R",
+      "game_vocal": "東雲はる",
+      "synth_vocal": "夢ノ結唱 ROSE",
+      "language": "fiXmArge",
+      "sources": [
+        {
+          "kind": "artist_original_synth_video",
+          "url": "https://www.youtube.com/watch?v=2P4u3QHOVpM"
+        },
+        {
+          "kind": "official_distributor_soundtrack",
+          "url": "https://linkco.re/yZdpXUPU?lang=en"
+        },
+        {
+          "kind": "authorized_chinese_distributor_synth_video",
+          "url": "https://www.bilibili.com/video/BV1CufHYpEmA?p=1"
+        }
+      ],
+      "todo": [
+        "Obtain/verify official Japanese parallel text",
+        "Record case/punctuation and vocal/version differences",
+        "Keep fan hypotheses separate from official translation"
+      ]
+    },
+    {
+      "id": "bloom",
+      "title": "bloom",
+      "role": "english_japanese_control_candidate_not_automatic_fixmarge_gold",
+      "songwriter": "daiki torii",
+      "game_vocal": "三木谷奈々",
+      "language": "English; official distribution page provides English/Japanese lyrics",
+      "sources": [
+        {
+          "kind": "official_distributor_soundtrack",
+          "url": "https://linkco.re/pUuQPTzb?lang=ja"
+        },
+        {
+          "kind": "official_distributor_lyrics_link",
+          "url": "https://linkco.re/pUuQPTzb/songs/4811848/lyrics?lang=en"
+        }
+      ],
+      "todo": [
+        "Use as a separate language-control task if useful",
+        "Do not attribute this ED to SLAVE.V-V-R",
+        "Do not relabel its English text as fiXmArge"
+      ]
+    }
+  ],
+  "rights_note": "These are source links, credits, and TODOs only. No lyrics are included. Official game guidelines section 6 prohibit official-content ML training; local evaluation and public redistribution are separate questions."
+}

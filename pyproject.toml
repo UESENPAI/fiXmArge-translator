@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fixmarge-translator"
+version = "0.1.0"
+description = "Source-aware fiXmArge lexicons, RAG, and adapter training"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+fixmarge-infer = "fixmarge.infer:main"
+fixmarge-prepare = "fixmarge.prepare:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,904 @@
+{
+  "created_at": "2026-11-07T10:19:20.811253+09:00",
+  "change_scope": "fiXmArge_to_Korean_English_Japanese_only_no_reverse_algorithm_changes",
+  "strategy": "expand_provenance_preserving_dictionary_RAG_not_further_finetuning",
+  "model": {
+    "name": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "adapter": null,
+    "precision": "BF16",
+    "prior_runtime_precision": "NF4",
+    "same_original_weight_files": true,
+    "additional_model_downloads": 0,
+    "training_performed": false,
+    "merge_performed": false
+  },
+  "dictionary_import": {
+    "base_entries": 387,
+    "merged_entries": 397,
+    "new_entries": 10,
+    "base_Korean_entries": 0,
+    "merged_Korean_entries": 10,
+    "base_unresolved_conflict_entries": 111,
+    "merged_unresolved_claim_difference_or_conflict_entries": 189,
+    "source_disagreement_policy": "Different normalized source sense sets are unresolved source-claim differences, not verified semantic contradictions or counts of new meanings. Existing claims are retained.",
+    "all_input_hashes_verified_and_unchanged": true,
+    "base_identities_review_rights_and_meanings_preserved": true,
+    "source_review_or_publication_clearance_granted": false,
+    "semantic_accuracy_verified": false
+  },
+  "source_imports": [
+    {
+      "id": "asankilp-english-csv",
+      "language": "en",
+      "source_url": "https://github.com/Asankilp/fiXmArge-dictionary",
+      "sha256": "f36662b1f6041a9c8bde1bec3a2a7b0489bef07b7671ab1ac7464fbe40371f36",
+      "review_status": "unreviewed_source_candidate",
+      "rights_status": "not_cleared",
+      "total_records": 264,
+      "imported_records": 263,
+      "distinct_canonical_forms": 262,
+      "source_claim_differences": 151,
+      "new_forms": [
+        "BuggAh",
+        "pris'jeen",
+        "Jus·tom",
+        "Sen-choose",
+        "neYO",
+        "UnneYO",
+        "Figeh`Sii",
+        "iTohrable",
+        "Su·Ready",
+        "Vani·Ell"
+      ]
+    },
+    {
+      "id": "dc-manosaba-13256",
+      "language": "ko",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=manosaba&no=13256",
+      "sha256": "3a75d128a484e44e1aaeb5e0fd560ef794706467e5723199098b76c95052e5e5",
+      "review_status": "unreviewed_source_claims",
+      "rights_status": "not_cleared",
+      "total_records": 10,
+      "imported_records": 10,
+      "distinct_canonical_forms": 10,
+      "source_claim_differences": 0,
+      "new_forms": []
+    }
+  ],
+  "current_dictionary": "data/processed/rag-expanded-v1",
+  "original_processed_dictionary_preserved": true,
+  "future_import_registry": "configs/rag-dictionary-imports.json",
+  "future_import_command": "scripts/import_rag_dictionaries.py --output NEW_DIRECTORY",
+  "unit_tests_passed": 295,
+  "live_cases": 10,
+  "api": {
+    "url": "http://127.0.0.1:7860/",
+    "title": "fiXmArge · ConWas",
+    "cases": [
+      {
+        "input": "DArime",
+        "source": "fix",
+        "target": "ko",
+        "output": "⚠ 단죄",
+        "answer_source": "dictionary_claims",
+        "generation_performed": false,
+        "sentence_verified": false
+      },
+      {
+        "input": "Coa Tain",
+        "source": "fix",
+        "target": "ko",
+        "output": "⚠ 법정",
+        "answer_source": "dictionary_claims",
+        "generation_performed": false,
+        "sentence_verified": false
+      },
+      {
+        "input": "niNeEr",
+        "source": "fix",
+        "target": "ja",
+        "output": "兄",
+        "answer_source": "dictionary",
+        "generation_performed": false,
+        "sentence_verified": false
+      },
+      {
+        "input": "sinruits",
+        "source": "fix",
+        "target": "ko",
+        "output": "진실; 현실",
+        "answer_source": "model_with_dictionary",
+        "generation_performed": true,
+        "sentence_verified": false
+      },
+      {
+        "input": "zzzz_no_attested_form",
+        "source": "fix",
+        "target": "ko",
+        "output": "MeMe · ∅ · ⚠",
+        "answer_source": "abstained",
+        "generation_performed": false,
+        "sentence_verified": false
+      }
+    ],
+    "passed": true
+  },
+  "protected_original_files_SHA256_unchanged": 48,
+  "sentence_provenance": {
+    "independent_attested_inputs": 1,
+    "source": "secondary_fan_wordbook_quote",
+    "file": "data/raw/japanese_wordbook.xlsx",
+    "sheet": "単語帳",
+    "cell": "G273",
+    "linked_primary_url": "https://www.youtube.com/watch?v=AIeAZ_qtdJ4",
+    "primary_snapshot_present": false,
+    "official_parallel_translation_present": false,
+    "fan_interpretation_in_prompt": false,
+    "grammar_rules_retrieved": 0
+  },
+  "assessment": {
+    "translation_accuracy": null,
+    "translation_improvement": "not_established",
+    "pipeline_changes_are_not_a_verified_fiXmArge_sentence_translator": true,
+    "unresolved_dictionary_differences_are_not_counts_of_new_correct_meanings": true,
+    "dictionary_context_and_precision_changed_no_causal_ablation": true,
+    "remaining_errors": [
+      "Korean_bridge_echoes_English_older_brother_and_is_withheld_by_language_check",
+      "Korean_paraphrase_of_supplied_JA_sister_gloss_uses_brother_term_in_attested_sentence_draft",
+      "Korean_sentence_draft_adds_intent_or_tense_without_retrieved_grammar_support",
+      "English_sentence_draft_does_not_express_retrieved_return_home_gloss"
+    ],
+    "raw_failed_attempts_preserved_locally": "runs/korean-japanese-rag-fix-2026-11-07"
+  },
+  "cases": [
+    {
+      "id": "release_claim_ko",
+      "source_text": "DArime",
+      "target_language": "ko",
+      "displayed_output": "⚠ 단죄",
+      "answer_source": "dictionary_claims",
+      "answer_kind": "unresolved_dictionary_alternatives",
+      "seconds": 0.145,
+      "generation_performed": false,
+      "dictionary_claims_answer": {
+        "translation": "단죄",
+        "evidence_ids": [
+          "fx-31c51b231818d3a1"
+        ],
+        "alternatives": [
+          {
+            "text": "단죄",
+            "language": "ko",
+            "evidence": [
+              {
+                "entry_id": "fx-31c51b231818d3a1",
+                "form": "DArime",
+                "sources": [
+                  "hecate-csv",
+                  "japanese-wordbook",
+                  "asankilp-english-csv",
+                  "dc-manosaba-13256"
+                ],
+                "status": "unreviewed",
+                "rights_status": "game_derived_not_eligible",
+                "has_conflict": true
+              }
+            ]
+          }
+        ],
+        "source_conflict_entry_ids": [
+          "fx-31c51b231818d3a1"
+        ],
+        "conflicts_resolved": false,
+        "source_review_verified": false,
+        "sentence_verified": false,
+        "model_generated": false
+      },
+      "korean_bridge_answer": null,
+      "source_matches": [
+        {
+          "text": "DArime",
+          "entry_ids": [
+            "fx-31c51b231818d3a1"
+          ],
+          "source_conflict_ids": [
+            "fx-31c51b231818d3a1"
+          ],
+          "missing_target_entry_ids": []
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {},
+      "related_gloss_support": [],
+      "raw_sentence_output": null,
+      "sentence_schema_valid": null,
+      "model_uncertainties": [],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_court_ko",
+      "source_text": "Coa Tain",
+      "target_language": "ko",
+      "displayed_output": "⚠ 법정",
+      "answer_source": "dictionary_claims",
+      "answer_kind": "unresolved_dictionary_alternatives",
+      "seconds": 0.028,
+      "generation_performed": false,
+      "dictionary_claims_answer": {
+        "translation": "법정",
+        "evidence_ids": [
+          "fx-a7220841393dc2e2"
+        ],
+        "alternatives": [
+          {
+            "text": "법정",
+            "language": "ko",
+            "evidence": [
+              {
+                "entry_id": "fx-a7220841393dc2e2",
+                "form": "Coa Tain",
+                "sources": [
+                  "hecate-csv",
+                  "japanese-wordbook",
+                  "asankilp-english-csv",
+                  "dc-manosaba-13256"
+                ],
+                "status": "unreviewed",
+                "rights_status": "game_derived_not_eligible",
+                "has_conflict": true
+              }
+            ]
+          }
+        ],
+        "source_conflict_entry_ids": [
+          "fx-a7220841393dc2e2"
+        ],
+        "conflicts_resolved": false,
+        "source_review_verified": false,
+        "sentence_verified": false,
+        "model_generated": false
+      },
+      "korean_bridge_answer": null,
+      "source_matches": [
+        {
+          "text": "Coa Tain",
+          "entry_ids": [
+            "fx-a7220841393dc2e2"
+          ],
+          "source_conflict_ids": [
+            "fx-a7220841393dc2e2"
+          ],
+          "missing_target_entry_ids": []
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {},
+      "related_gloss_support": [],
+      "raw_sentence_output": null,
+      "sentence_schema_valid": null,
+      "model_uncertainties": [],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_truth_ko",
+      "source_text": "sinruits",
+      "target_language": "ko",
+      "displayed_output": "진실; 현실",
+      "answer_source": "model_with_dictionary",
+      "answer_kind": "korean_lexical_paraphrase",
+      "seconds": 1.962,
+      "generation_performed": true,
+      "dictionary_claims_answer": null,
+      "korean_bridge_answer": {
+        "translation": "진실; 현실",
+        "evidence_ids": [
+          "fx-582a1cecf6b4f969"
+        ],
+        "machine_generated": true,
+        "gloss_alignment_verified": false,
+        "source_conflict_entry_ids": [
+          "fx-582a1cecf6b4f969"
+        ],
+        "conflicts_resolved": false,
+        "sentence_verified": false
+      },
+      "source_matches": [
+        {
+          "text": "sinruits",
+          "entry_ids": [
+            "fx-582a1cecf6b4f969"
+          ],
+          "source_conflict_ids": [
+            "fx-582a1cecf6b4f969"
+          ],
+          "missing_target_entry_ids": [
+            "fx-582a1cecf6b4f969"
+          ]
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {
+        "raw_output": "{\"glosses\": [{\"entry_id\": \"g0\", \"korean\": [\"진실\", \"현실\"]}]}",
+        "raw_json_valid": true,
+        "json_extraction": "complete_json",
+        "schema_valid": true,
+        "glosses": [
+          {
+            "entry_id": "fx-582a1cecf6b4f969",
+            "source_senses": {
+              "ja": [
+                "真実"
+              ],
+              "en": [
+                "truth",
+                "Reality"
+              ]
+            },
+            "source_conflict": true,
+            "source_uncertain": false,
+            "korean": [
+              "진실",
+              "현실"
+            ],
+            "related_lexical_support": []
+          }
+        ],
+        "model_id_map": {
+          "g0": "fx-582a1cecf6b4f969"
+        },
+        "attempts": [
+          {
+            "raw_output": "{\"glosses\": [{\"entry_id\": \"g0\", \"korean\": [\"진실\", \"현실\"]}]}",
+            "raw_json_valid": true,
+            "json_extraction": "complete_json",
+            "schema_valid": true,
+            "unsupported_entry_ids": []
+          }
+        ]
+      },
+      "related_gloss_support": [],
+      "raw_sentence_output": null,
+      "sentence_schema_valid": null,
+      "model_uncertainties": [],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_brother_ko",
+      "source_text": "niNeEr",
+      "target_language": "ko",
+      "displayed_output": "MeMe · ∅ · ⚠",
+      "answer_source": "abstained",
+      "answer_kind": null,
+      "seconds": 3.795,
+      "generation_performed": true,
+      "dictionary_claims_answer": null,
+      "korean_bridge_answer": null,
+      "source_matches": [
+        {
+          "text": "niNeEr",
+          "entry_ids": [
+            "fx-5828194a6f06330d"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": [
+            "fx-5828194a6f06330d"
+          ]
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {
+        "raw_output": "{\"glosses\": [{\"entry_id\": \"g0\", \"korean\": [\"older brother\"]}]}",
+        "raw_json_valid": true,
+        "json_extraction": "complete_json",
+        "schema_valid": false,
+        "glosses": [],
+        "model_id_map": {
+          "g0": "fx-5828194a6f06330d"
+        },
+        "attempts": [
+          {
+            "raw_output": "{\"glosses\": [{\"entry_id\": \"g0\", \"korean\": [\"older brother\"]}]}",
+            "raw_json_valid": true,
+            "json_extraction": "complete_json",
+            "schema_valid": false,
+            "unsupported_entry_ids": []
+          },
+          {
+            "raw_output": "{\"glosses\": [{\"entry_id\": \"g0\", \"korean\": [\"older brother\"]}]}",
+            "raw_json_valid": true,
+            "json_extraction": "complete_json",
+            "schema_valid": false,
+            "unsupported_entry_ids": []
+          }
+        ]
+      },
+      "related_gloss_support": [],
+      "raw_sentence_output": null,
+      "sentence_schema_valid": null,
+      "model_uncertainties": [],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": "korean_gloss_bridge_unavailable",
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_word_ja",
+      "source_text": "niNeEr",
+      "target_language": "ja",
+      "displayed_output": "兄",
+      "answer_source": "dictionary",
+      "answer_kind": null,
+      "seconds": 0.03,
+      "generation_performed": false,
+      "dictionary_claims_answer": null,
+      "korean_bridge_answer": null,
+      "source_matches": [
+        {
+          "text": "niNeEr",
+          "entry_ids": [
+            "fx-5828194a6f06330d"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": []
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {},
+      "related_gloss_support": [],
+      "raw_sentence_output": null,
+      "sentence_schema_valid": null,
+      "model_uncertainties": [],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_word_en",
+      "source_text": "tone wachi",
+      "target_language": "en",
+      "displayed_output": "eleven; Eleven",
+      "answer_source": "dictionary",
+      "answer_kind": null,
+      "seconds": 0.029,
+      "generation_performed": false,
+      "dictionary_claims_answer": null,
+      "korean_bridge_answer": null,
+      "source_matches": [
+        {
+          "text": "tone wachi",
+          "entry_ids": [
+            "fx-4761591a59bbc33d"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": []
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {},
+      "related_gloss_support": [],
+      "raw_sentence_output": null,
+      "sentence_schema_valid": null,
+      "model_uncertainties": [],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_sentence_ko",
+      "source_text": "sINeEy Iz'u Nii riEl",
+      "target_language": "ko",
+      "displayed_output": "형일까?는 아니고, 돌아가기로 했어.",
+      "answer_source": "model_with_dictionary",
+      "answer_kind": null,
+      "seconds": 27.322,
+      "generation_performed": true,
+      "dictionary_claims_answer": null,
+      "korean_bridge_answer": null,
+      "source_matches": [
+        {
+          "text": "sINeEy",
+          "entry_ids": [
+            "fx-84a7955ffac17756"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": [
+            "fx-84a7955ffac17756"
+          ]
+        },
+        {
+          "text": "Iz'u",
+          "entry_ids": [
+            "fx-f151c99a460401fc"
+          ],
+          "source_conflict_ids": [
+            "fx-f151c99a460401fc"
+          ],
+          "missing_target_entry_ids": [
+            "fx-f151c99a460401fc"
+          ]
+        },
+        {
+          "text": "Nii",
+          "entry_ids": [
+            "fx-2b8bacf36013f2d7"
+          ],
+          "source_conflict_ids": [
+            "fx-2b8bacf36013f2d7"
+          ],
+          "missing_target_entry_ids": [
+            "fx-2b8bacf36013f2d7"
+          ]
+        },
+        {
+          "text": "riEl",
+          "entry_ids": [
+            "fx-c1ad1fc9048451ef"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": [
+            "fx-c1ad1fc9048451ef"
+          ]
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {
+        "raw_output": "{\"glosses\": [{\"entry_id\": \"g0\", \"korean\": [\"형일까?\", \"형일 수도 있음\"]}, {\"entry_id\": \"g1\", \"korean\": [\"는\", \"이다\", \"이다\"]}, {\"entry_id\": \"g2\", \"korean\": [\"다르다\", \"아니요\", \"안 돼\", \"그만 하라\", \"필요 없어\"]}, {\"entry_id\": \"g3\", \"korean\": [\"돌아가기\"]}]}\"",
+        "raw_json_valid": false,
+        "json_extraction": "complete_object_before_extra_closing_delimiters",
+        "schema_valid": true,
+        "glosses": [
+          {
+            "entry_id": "fx-84a7955ffac17756",
+            "source_senses": {
+              "ja": [
+                "姉？"
+              ],
+              "en": []
+            },
+            "source_conflict": false,
+            "source_uncertain": true,
+            "korean": [
+              "형일까?",
+              "형일 수도 있음"
+            ],
+            "related_lexical_support": [
+              {
+                "entry_id": "fx-84a7955ffac17756",
+                "related_entry_id": "fx-ef45760de929908b",
+                "relation": "shared_Japanese_gloss",
+                "source_gloss": "姉？",
+                "query": "姉",
+                "query_is_hypothesis": true,
+                "english": [
+                  "older sister"
+                ],
+                "related_sources": [
+                  "hecate-csv"
+                ],
+                "related_source_conflict": false,
+                "alignment_verified": false
+              }
+            ]
+          },
+          {
+            "entry_id": "fx-f151c99a460401fc",
+            "source_senses": {
+              "ja": [
+                "～は",
+                "～が",
+                "～は～である"
+              ],
+              "en": [
+                "is",
+                "to be (indicates subject, state, action)"
+              ]
+            },
+            "source_conflict": true,
+            "source_uncertain": false,
+            "korean": [
+              "는",
+              "이다"
+            ],
+            "related_lexical_support": []
+          },
+          {
+            "entry_id": "fx-2b8bacf36013f2d7",
+            "source_senses": {
+              "ja": [
+                "ちがう",
+                "ない",
+                "いや",
+                "やめて",
+                "いらない",
+                "否定、ない、いらない、いやだ"
+              ],
+              "en": [
+                "different",
+                "no",
+                "not",
+                "don't",
+                "don't need",
+                "Not, incorrect, negative"
+              ]
+            },
+            "source_conflict": true,
+            "source_uncertain": false,
+            "korean": [
+              "다르다",
+              "아니요",
+              "안 돼",
+              "그만 하라",
+              "필요 없어"
+            ],
+            "related_lexical_support": []
+          },
+          {
+            "entry_id": "fx-c1ad1fc9048451ef",
+            "source_senses": {
+              "ja": [
+                "帰る"
+              ],
+              "en": []
+            },
+            "source_conflict": false,
+            "source_uncertain": false,
+            "korean": [
+              "돌아가기"
+            ],
+            "related_lexical_support": [
+              {
+                "entry_id": "fx-c1ad1fc9048451ef",
+                "related_entry_id": "fx-846bfe1197bb6dc3",
+                "relation": "shared_Japanese_gloss",
+                "source_gloss": "帰る",
+                "query": "帰る",
+                "query_is_hypothesis": false,
+                "english": [
+                  "return home"
+                ],
+                "related_sources": [
+                  "hecate-csv"
+                ],
+                "related_source_conflict": false,
+                "alignment_verified": false
+              }
+            ]
+          }
+        ],
+        "model_id_map": {
+          "g0": "fx-84a7955ffac17756",
+          "g1": "fx-f151c99a460401fc",
+          "g2": "fx-2b8bacf36013f2d7",
+          "g3": "fx-c1ad1fc9048451ef"
+        },
+        "attempts": [
+          {
+            "raw_output": "{\"glosses\": [{\"entry_id\": \"g0\", \"korean\": [\"형일까?\", \"형일 수도 있음\"]}, {\"entry_id\": \"g1\", \"korean\": [\"는\", \"이다\", \"이다\"]}, {\"entry_id\": \"g2\", \"korean\": [\"다르다\", \"아니요\", \"안 돼\", \"그만 하라\", \"필요 없어\"]}, {\"entry_id\": \"g3\", \"korean\": [\"돌아가기\"]}]}\"",
+            "raw_json_valid": false,
+            "json_extraction": "complete_object_before_extra_closing_delimiters",
+            "schema_valid": true,
+            "unsupported_entry_ids": []
+          }
+        ]
+      },
+      "related_gloss_support": [
+        {
+          "entry_id": "fx-84a7955ffac17756",
+          "related_entry_id": "fx-ef45760de929908b",
+          "relation": "shared_Japanese_gloss",
+          "source_gloss": "姉？",
+          "query": "姉",
+          "query_is_hypothesis": true,
+          "english": [
+            "older sister"
+          ],
+          "related_sources": [
+            "hecate-csv"
+          ],
+          "related_source_conflict": false,
+          "alignment_verified": false
+        },
+        {
+          "entry_id": "fx-c1ad1fc9048451ef",
+          "related_entry_id": "fx-846bfe1197bb6dc3",
+          "relation": "shared_Japanese_gloss",
+          "source_gloss": "帰る",
+          "query": "帰る",
+          "query_is_hypothesis": false,
+          "english": [
+            "return home"
+          ],
+          "related_sources": [
+            "hecate-csv"
+          ],
+          "related_source_conflict": false,
+          "alignment_verified": false
+        }
+      ],
+      "raw_sentence_output": "{\n  \"tentative_translation\": \"형일까?는 아니고, 돌아가기로 했어.\",\n  \"evidence_ids\": [\n    \"fx-84a7955ffac17756\",\n    \"fx-f151c99a460401fc\",\n    \"fx-2b8bacf36013f2d7\",\n    \"fx-c1ad1fc9048451ef\"\n  ],\n  \"uncertainties\": [\n    \"sINeEy의 '형일까?'는 일본어 '姉？'에서 유래했으나, 정확한 의미는 불확실함\",\n    \"Nii의 '아니요'와 '다르다'는 서로 다른 의미로 해석될 수 있음\",\n    \"riEl의 '돌아가기'는 'return home'을 의미하지만, 문맥상 행동의 종료를 나타낼 수도 있음\"\n  ]\n}",
+      "sentence_schema_valid": true,
+      "model_uncertainties": [
+        "sINeEy의 '형일까?'는 일본어 '姉？'에서 유래했으나, 정확한 의미는 불확실함",
+        "Nii의 '아니요'와 '다르다'는 서로 다른 의미로 해석될 수 있음",
+        "riEl의 '돌아가기'는 'return home'을 의미하지만, 문맥상 행동의 종료를 나타낼 수도 있음"
+      ],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_sentence_ja",
+      "source_text": "sINeEy Iz'u Nii riEl",
+      "target_language": "ja",
+      "displayed_output": "姉は違う、帰る",
+      "answer_source": "model_with_dictionary",
+      "answer_kind": null,
+      "seconds": 18.28,
+      "generation_performed": true,
+      "dictionary_claims_answer": null,
+      "korean_bridge_answer": null,
+      "source_matches": [
+        {
+          "text": "sINeEy",
+          "entry_ids": [
+            "fx-84a7955ffac17756"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": []
+        },
+        {
+          "text": "Iz'u",
+          "entry_ids": [
+            "fx-f151c99a460401fc"
+          ],
+          "source_conflict_ids": [
+            "fx-f151c99a460401fc"
+          ],
+          "missing_target_entry_ids": []
+        },
+        {
+          "text": "Nii",
+          "entry_ids": [
+            "fx-2b8bacf36013f2d7"
+          ],
+          "source_conflict_ids": [
+            "fx-2b8bacf36013f2d7"
+          ],
+          "missing_target_entry_ids": []
+        },
+        {
+          "text": "riEl",
+          "entry_ids": [
+            "fx-c1ad1fc9048451ef"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": []
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {},
+      "related_gloss_support": [],
+      "raw_sentence_output": "{\n  \"tentative_translation\": \"姉は違う、帰る\",\n  \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"],\n  \"uncertainties\": [\n    \"The form 'Iz'u' may represent 'は' or 'が', leading to ambiguity in subject marking.\",\n    \"The sense of 'Nii' as '違う' (different) conflicts with its other senses like 'ない' (no), making the intended negation or contrast unclear.\",\n    \"The phrase structure 'sINeEy Iz'u Nii riEl' lacks grammatical verification and may not form a natural Japanese sentence.\"\n  ]\n}",
+      "sentence_schema_valid": true,
+      "model_uncertainties": [
+        "The form 'Iz'u' may represent 'は' or 'が', leading to ambiguity in subject marking.",
+        "The sense of 'Nii' as '違う' (different) conflicts with its other senses like 'ない' (no), making the intended negation or contrast unclear.",
+        "The phrase structure 'sINeEy Iz'u Nii riEl' lacks grammatical verification and may not form a natural Japanese sentence."
+      ],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_sentence_en",
+      "source_text": "sINeEy Iz'u Nii riEl",
+      "target_language": "en",
+      "displayed_output": "SINeEy is not different (or: SINeEy is not the case)",
+      "answer_source": "model_with_dictionary",
+      "answer_kind": null,
+      "seconds": 16.989,
+      "generation_performed": true,
+      "dictionary_claims_answer": null,
+      "korean_bridge_answer": null,
+      "source_matches": [
+        {
+          "text": "sINeEy",
+          "entry_ids": [
+            "fx-84a7955ffac17756"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": [
+            "fx-84a7955ffac17756"
+          ]
+        },
+        {
+          "text": "Iz'u",
+          "entry_ids": [
+            "fx-f151c99a460401fc"
+          ],
+          "source_conflict_ids": [
+            "fx-f151c99a460401fc"
+          ],
+          "missing_target_entry_ids": []
+        },
+        {
+          "text": "Nii",
+          "entry_ids": [
+            "fx-2b8bacf36013f2d7"
+          ],
+          "source_conflict_ids": [
+            "fx-2b8bacf36013f2d7"
+          ],
+          "missing_target_entry_ids": []
+        },
+        {
+          "text": "riEl",
+          "entry_ids": [
+            "fx-c1ad1fc9048451ef"
+          ],
+          "source_conflict_ids": [],
+          "missing_target_entry_ids": [
+            "fx-c1ad1fc9048451ef"
+          ]
+        }
+      ],
+      "unmatched_source_spans": [],
+      "Korean_bridge": {},
+      "related_gloss_support": [],
+      "raw_sentence_output": "{\n  \"tentative_translation\": \"SINeEy is not different (or: SINeEy is not the case)\",\n  \"evidence_ids\": [\n    \"fx-84a7955ffac17756\",\n    \"fx-f151c99a460401fc\",\n    \"fx-2b8bacf36013f2d7\",\n    \"fx-c1ad1fc9048451ef\"\n  ],\n  \"uncertainties\": [\n    \"SINeEy's meaning is unclear and only partially glossed in Japanese (possibly 'sister?'), so the subject is ambiguous.\",\n    \"Nii has multiple conflicting English senses (no, not, don't, different), making the negation or contrast unclear.\",\n    \"riEl (return) is not clearly linked to the verb in a grammatical or semantic way; its role in the sentence is uncertain.\"\n  ]\n}",
+      "sentence_schema_valid": true,
+      "model_uncertainties": [
+        "SINeEy's meaning is unclear and only partially glossed in Japanese (possibly 'sister?'), so the subject is ambiguous.",
+        "Nii has multiple conflicting English senses (no, not, don't, different), making the negation or contrast unclear.",
+        "riEl (return) is not clearly linked to the verb in a grammatical or semantic way; its role in the sentence is uncertain."
+      ],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "id": "release_unknown",
+      "source_text": "zzzz_no_attested_form",
+      "target_language": "ko",
+      "displayed_output": "MeMe · ∅ · ⚠",
+      "answer_source": "abstained",
+      "answer_kind": null,
+      "seconds": 0.025,
+      "generation_performed": false,
+      "dictionary_claims_answer": null,
+      "korean_bridge_answer": null,
+      "source_matches": [],
+      "unmatched_source_spans": [
+        {
+          "text": "zzzz_no_attested_form",
+          "start": 0,
+          "end": 21
+        }
+      ],
+      "Korean_bridge": {},
+      "related_gloss_support": [],
+      "raw_sentence_output": null,
+      "sentence_schema_valid": null,
+      "model_uncertainties": [],
+      "unsupported_evidence_ids": [],
+      "abstention_reason": "no_fiXmArge_dictionary_evidence",
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!-- Copyright (c) 2026 UESENPAI. SPDX-License-Identifier: MIT. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="title desc">
+  <title id="title">fiXmArge · Coword · MeMe</title>
+  <desc id="desc">ConWas · kOht · KolSu · WiD · LiGh rai · FineclOWt</desc>
+  <defs>
+    <radialGradient id="night" cx="70%" cy="35%" r="85%">
+      <stop offset="0" stop-color="#30262e"/>
+      <stop offset="0.55" stop-color="#151822"/>
+      <stop offset="1" stop-color="#0c1018"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f7f0df"/>
+      <stop offset="1" stop-color="#c5b49e"/>
+    </linearGradient>
+    <clipPath id="edge"><rect width="1200" height="400" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#edge)">
+    <rect width="1200" height="400" fill="url(#night)"/>
+    <g fill="#c6b9a8" opacity="0.045" font-family="Georgia,serif" font-size="35" letter-spacing="5">
+      <text x="-40" y="123">Coword · MeMe · FineclOWt · Coword · MeMe · FineclOWt</text>
+      <text x="-160" y="173">KolSu · kOht · WiD · LiGh rai · KolSu · kOht · WiD</text>
+      <text x="-35" y="223">FineclOWt · ConWas · Coword · MeMe · FineclOWt · ConWas</text>
+      <text x="-125" y="273">WiD · LiGh rai · kOht · KolSu · WiD · LiGh rai · kOht</text>
+    </g>
+    <g fill="none" stroke="#caba9e">
+      <rect x="26.5" y="26.5" width="1147" height="347" rx="2" opacity="0.18"/>
+      <path d="M60 91V60H132 M1068 60H1140V91 M60 309V340H132 M1068 340H1140V309" opacity="0.55"/>
+      <circle cx="982" cy="194" r="129" opacity="0.10"/>
+      <circle cx="982" cy="194" r="99" opacity="0.08"/>
+      <path d="M809 194h346 M982 55v278 M88 295H1112" opacity="0.12"/>
+      <path d="M933 75L1101 270 849 214 1085 118 933 75" opacity="0.10"/>
+    </g>
+    <g font-family="ui-monospace,Consolas,monospace" font-size="12" letter-spacing="4">
+      <text x="82" y="75" fill="#e8a08d">ConWas</text>
+      <text x="1118" y="75" text-anchor="end" fill="#a59a8e">FineclOWt</text>
+    </g>
+    <text x="596" y="219" text-anchor="middle" fill="#070a10" opacity="0.50"
+          font-family="Georgia,'Times New Roman',serif" font-size="150" letter-spacing="-7">fiXmArge</text>
+    <text x="592" y="214" text-anchor="middle" fill="url(#ink)"
+          font-family="Georgia,'Times New Roman',serif" font-size="150" letter-spacing="-7">fiXmArge</text>
+    <text x="600" y="265" text-anchor="middle" fill="#c8b89f"
+          font-family="Georgia,'Times New Roman',serif" font-size="21" letter-spacing="3">kOht · KolSu · WiD · LiGh rai</text>
+    <g fill="#e8a08d">
+      <path d="M600 314l5 7-5 7-5-7z"/>
+      <circle cx="86" cy="321" r="2"/>
+      <circle cx="1114" cy="321" r="2"/>
+    </g>
+    <g stroke="#c6b39a" opacity="0.28"><path d="M100 321H420 M780 321H1100"/></g>
+    <g font-family="ui-monospace,Consolas,monospace" font-size="12" letter-spacing="3" fill="#a89c8e">
+      <text x="600" y="359" text-anchor="middle">Coword → FineclOWt → MeMe</text>
+    </g>
+  </g>
+</svg>

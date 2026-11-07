@@ -1,0 +1,17 @@
+{
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "model_license": "Apache-2.0",
+  "output_dir": "artifacts/qwen3-4b-fixmarge-lora-pilot",
+  "max_length": 1024,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "max_steps": 20,
+  "learning_rate": 2e-05,
+  "eval_steps": 10,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "seed": 42,
+  "push_to_hub": false
+}

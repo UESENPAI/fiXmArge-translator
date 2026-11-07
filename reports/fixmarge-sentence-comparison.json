@@ -1,0 +1,117 @@
+{
+  "created_at": "2026-11-06T15:42:53.791063+00:00",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "configuration": {
+    "precision": "NF4",
+    "do_sample": false,
+    "seed": 0,
+    "max_new_tokens": 384,
+    "allow_download": false,
+    "dictionary_context": "identical_between_base_and_lora",
+    "base_pass": "before_adapter_attachment"
+  },
+  "provenance": {
+    "source": "secondary_fan_wordbook",
+    "file": "data/raw/japanese_wordbook.xlsx",
+    "sha256": "2b29b1cf34e13da278f5c563c5fdcd6ef12fbd8c69252df24d1c1391cd646605",
+    "sheet": "単語帳",
+    "cell": "G273",
+    "entry_id": "fx-84a7955ffac17756",
+    "linked_primary_url": "https://www.youtube.com/watch?v=AIeAZ_qtdJ4",
+    "primary_snapshot_present": false,
+    "official_parallel_translation_present": false,
+    "fan_interpretation": "sINeEy は帰らない",
+    "fan_interpretation_in_prompt": false,
+    "independent_sentences": 1,
+    "target_directions": 3,
+    "snapshot_basis": "current_restored_secondary_fan_workbook",
+    "matches_current_prepared_source_lock": true,
+    "matches_legacy_repository_source_lock": false
+  },
+  "assessment": {
+    "translation_accuracy": null,
+    "translation_improvement": "not_established",
+    "sentence_verified": false,
+    "grammar_rules_retrieved": 0,
+    "limitations": [
+      "secondary_quote_only",
+      "fan_interpretation_is_not_gold",
+      "sINeEy_sense_is_tentative",
+      "Iz_u_and_Nii_source_conflicts",
+      "three_directions_are_one_sentence_not_three_independent_sentences",
+      "changed_output_does_not_establish_improvement",
+      "same_output_does_not_prove_adapter_is_inactive",
+      "NF4_runtime_not_full_precision_comparison"
+    ]
+  },
+  "integrity": {
+    "base_weight_sha256_unchanged": true,
+    "adapter_weight_sha256_unchanged": true,
+    "base_weights": {
+      "model-00001-of-00003.safetensors": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6",
+      "model-00002-of-00003.safetensors": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1",
+      "model-00003-of-00003.safetensors": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d"
+    },
+    "adapter_sha256": "8eb2c2112ba15dc1666958e01140c8f3080cd621868835eb8c60e3361b19c09d",
+    "adapter_merged": false
+  },
+  "http_attempts": [],
+  "downloads": 0,
+  "training_performed": false,
+  "adapter_repo": "uesenpai/qwen3-4b-wordnet-en-ja-lora-v1",
+  "observations": {
+    "ja": "same_translation",
+    "en": {
+      "subject_before": "Sister",
+      "subject_after": "sINeEy",
+      "remaining_predicate": "is not different"
+    },
+    "ko": {
+      "before": "abstention",
+      "after": "question",
+      "source_to_question_alignment_verified": false
+    },
+    "return_sense_expressed_in_generated_non_null_sentences": false,
+    "shared_WordNet_context_includes_unrelated_homonyms": true,
+    "riEl_standard_dictionary_homonym": "Cambodian_currency_riel",
+    "translation_improvement": "not_established",
+    "independent_sentence_count": 1,
+    "translation_direction_count": 3,
+    "generated_outputs": 6,
+    "riEl_japanese_dictionary_sense": [
+      "帰る"
+    ],
+    "riEl_english_paraphrase": "return",
+    "english_paraphrase_is_independently_attested_English_gloss": false
+  },
+  "rows": [
+    {
+      "direction": "fix-to-ja",
+      "prompt_sha256": "8572ae1fed385c905072b26be65ecf7c7446b64f5a42248cd0a6f6da2a67d09b",
+      "base_translation": "姉は違う",
+      "lora_translation": "姉は違う",
+      "translation_identical": true,
+      "base_raw_output": "{\n  \"tentative_translation\": \"姉は違う\",\n  \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"],\n  \"uncertainties\": [\n    \"The form 'sINeEy' as '姉？' is unreviewed and derived from game content; its use as a proper noun or interrogative is ambiguous.\",\n    \"The connector 'Iz'u' has multiple interpretations ('～は', '～が', '～は～である'); the grammatical role is unresolved.\",\n    \"The sense of 'Nii' as '違う' (different) conflicts with 'ない' (no) and 'いや' (no, I don't), suggesting possible ambiguity in negation or contrast.\",\n    \"The translation '姉は違う' is a machine paraphrase based on lexical matches and English glosses; it lacks verified sentence-level validation or context.\"\n  ]\n}",
+      "lora_raw_output": "{\"tentative_translation\": \"姉は違う\", \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"], \"uncertainties\": [\"Iz'uの文法的役割（～は、～が、～は～である）が曖昧\", \"Niiの意味（ちがう、ない、いや、いらない）が複数あり、文脈に依存\", \"riElの帰るは文法的に文の終端に位置するが、文全体の意味が不明\"]}"
+    },
+    {
+      "direction": "fix-to-en",
+      "prompt_sha256": "862cdf51f69277ffad0d27859ccd653a4f65042cd45e51e716e16eea9e361780",
+      "base_translation": "Sister is not different",
+      "lora_translation": "sINeEy is not different",
+      "translation_identical": false,
+      "base_raw_output": "{\n  \"tentative_translation\": \"Sister is not different\",\n  \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"],\n  \"uncertainties\": [\n    \"The form 'sINeEy' is not clearly defined in English; possible reference to a name or a misrendered word.\",\n    \"The word 'riEl' has a known meaning in Cambodian currency, but its use in a sentence with 'Nii' is ambiguous without context.\",\n    \"The grammatical structure and intended meaning of 'Iz'u' as 'is' or 'to be' are unclear without full syntactic context.\",\n    \"The sense of 'Nii' as 'different', 'no', or 'not' creates ambiguity; the sentence may be negated or comparative.\"\n  ]\n}",
+      "lora_raw_output": "{\"tentative_translation\": \"sINeEy is not different\", \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"], \"uncertainties\": [\"sINeEy is not a standard English word; its meaning is unclear\", \"Nii has multiple meanings including 'different', 'no', 'not', 'don't', 'don't need'; context is needed to determine intended sense\", \"riEl is a Cambodian currency unit, not a verb; its use in a sentence is ambiguous\", \"no direct sentence-level alignment found between source and target\"]}"
+    },
+    {
+      "direction": "fix-to-ko",
+      "prompt_sha256": "eeb05cf7d227ffd39efa95d46238c0e4741fee2de39d9e2a9228b6ea34c21f50",
+      "base_translation": null,
+      "lora_translation": "누구냐",
+      "translation_identical": false,
+      "base_raw_output": "{\n  \"tentative_translation\": null,\n  \"evidence_ids\": [\n    \"fx-84a7955ffac17756\",\n    \"fx-f151c99a460401fc\",\n    \"fx-2b8bacf36013f2d7\",\n    \"fx-c1ad1fc9048451ef\"\n  ],\n  \"uncertainties\": [\n    \"No verified Korean equivalents found for 'sINeEy' in the dictionary.\",\n    \"Ambiguous use of 'Iz'u' as 'is' or 'to be' without grammatical context.\",\n    \"Nii is interpreted as 'different', 'no', or 'not' but lacks clear syntactic role.\",\n    \"riEl is glossed as 'return' in Japanese but no clear connection to a Korean phrase.\",\n    \"No cross-lingual alignment or sentence structure verification available.\"\n  ]\n}",
+      "lora_raw_output": "{\"tentative_translation\": \"누구냐\", \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"], \"uncertainties\": [\"sINeEy의 의미는 명확하지 않음\", \"Iz'u의 의미는 명확하지 않음\", \"Nii의 의미는 명확하지 않음\", \"riEl의 의미는 명확하지 않음\", \"문장 구조가 불확실함\", \"문장의 의미가 명확하지 않음\"]}"
+    }
+  ]
+}

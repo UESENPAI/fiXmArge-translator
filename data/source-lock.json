@@ -1,0 +1,14 @@
+{
+  "hecate.csv": {
+    "sha256": "0b1ee39fb9e315f45c841009198bf1ce4485580634f01c8fcb920b7f79e50316",
+    "bytes": 26636
+  },
+  "japanese_readme.csv": {
+    "sha256": "6142edc6f0443c6501348ad69a2488a9c27c3d8714ab5317672b3e97d7d454d4",
+    "bytes": 3501
+  },
+  "japanese_wordbook.xlsx": {
+    "sha256": "ca65a2527e0fada3011e9791b4380dd757ef22d5dc96d23513fa0fff6f6815e9",
+    "bytes": 34668
+  }
+}

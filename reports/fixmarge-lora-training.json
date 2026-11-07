@@ -1,0 +1,543 @@
+{
+  "created_at": "2026-11-06T17:29:57.876379+00:00",
+  "scope": "local_fiXmArge_lexical_fact_adapter_training_and_source_agreement",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "base_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "configuration": {
+    "load_in_4bit": true,
+    "quantization": "NF4",
+    "do_sample": false,
+    "max_new_tokens": 32,
+    "device": "cuda",
+    "allow_download": false,
+    "same_base_before_adapter_attachment": true
+  },
+  "adapters": {
+    "v1": "artifacts/qwen3-4b-fixmarge-wordnet-lora-v1",
+    "v2": "artifacts/qwen3-4b-fixmarge-wordnet-lora-v2",
+    "local_only": true,
+    "new_HF_model_upload_performed": false,
+    "public_release_cleared": false,
+    "saved_evaluation_candidate": "artifacts/qwen3-4b-fixmarge-wordnet-lora-v2",
+    "local_demo_adapter": "artifacts/qwen3-4b-wordnet-en-ja-lora-v1",
+    "new_trained_candidate_is_demo_default": false
+  },
+  "training": {
+    "executed_optimizer_steps": {
+      "v1": 128,
+      "v2": 192
+    },
+    "total_executed_updates": 320,
+    "selected_weight_lineage": [
+      {
+        "phase": "v1",
+        "selected_checkpoint_step": 128
+      },
+      {
+        "phase": "v2",
+        "selected_checkpoint_step": 96
+      }
+    ],
+    "selected_lineage_update_count": 224,
+    "selected_v2_is_final_executed_step": false,
+    "v2_initialization": "v1_weights_only_fresh_optimizer_scheduler_global_step_zero",
+    "v2_selection": "combined_validation_loss_checkpoint_96_after_executing_192_steps",
+    "trainable_parameters": 16515072,
+    "adapter_tensor_count": 504,
+    "supervised_Korean_targets": false,
+    "sentence_grammar_supervision": false
+  },
+  "data": {
+    "source_entries": 387,
+    "retained_bounded_entries": 270,
+    "unique_fix_records": {
+      "train": 838,
+      "validation": 103,
+      "test": 126
+    },
+    "v1_mixed_train_rows": 1862,
+    "v2_mixed_train_rows": 3480,
+    "v2_fix_train_repeat": 4,
+    "v2_repeated_fix_train_rows": 3352,
+    "v2_WordNet_replay_train_rows": 128,
+    "validation_rows_both_phases": 231,
+    "same_unique_fix_splits_both_phases": true,
+    "source_annotation_status": "unreviewed_bounded_lexical_mapping",
+    "source_rights_metadata_retained": true,
+    "local_experiment_grants_source_permission": false,
+    "raw_corpus_included_in_report": false
+  },
+  "comparison_audit": {
+    "cases_per_model": 16,
+    "same_case_ids_and_order": true,
+    "same_prompt_hashes": true,
+    "same_source_targets": true,
+    "raw_original_base_outputs_equal_across_v1_v2_runs": true,
+    "raw_original_base_identical_cases": 16,
+    "test_selection_used_model_outputs": false,
+    "heldout_directional_probes": 8,
+    "heldout_unique_families": 7,
+    "original_base_measured_before_adapter_attachment": true
+  },
+  "source_dictionary_candidate_agreement": {
+    "train_seen": {
+      "base": {
+        "matched": 0,
+        "cases": 4
+      },
+      "v1": {
+        "matched": 0,
+        "cases": 4
+      },
+      "v2": {
+        "matched": 3,
+        "cases": 4
+      }
+    },
+    "heldout_test": {
+      "base": {
+        "matched": 0,
+        "cases": 8
+      },
+      "v1": {
+        "matched": 0,
+        "cases": 8
+      },
+      "v2": {
+        "matched": 0,
+        "cases": 8
+      }
+    }
+  },
+  "train_seen_probes": [
+    {
+      "id": "train_seen-fix-to-ja-1",
+      "direction": "fix-to-ja",
+      "input": "niNeEr",
+      "source_candidates": [
+        "兄"
+      ],
+      "raw_outputs": {
+        "base": "niNeEr",
+        "v1": "九",
+        "v2": "兄"
+      },
+      "source_candidate_set_equal": {
+        "base": false,
+        "v1": false,
+        "v2": true
+      },
+      "seen_in_training": true,
+      "source_annotation_status": "unreviewed_bounded_lexical_mapping",
+      "source_rights_status": "game_derived_not_eligible"
+    },
+    {
+      "id": "train_seen-ja-to-fix-1",
+      "direction": "ja-to-fix",
+      "input": "笑う",
+      "source_candidates": [
+        "LaLau"
+      ],
+      "raw_outputs": {
+        "base": "笑う / smile, to laugh",
+        "v1": "hAa",
+        "v2": "LaLau"
+      },
+      "source_candidate_set_equal": {
+        "base": false,
+        "v1": false,
+        "v2": true
+      },
+      "seen_in_training": true,
+      "source_annotation_status": "unreviewed_bounded_lexical_mapping",
+      "source_rights_status": "game_derived_not_eligible"
+    },
+    {
+      "id": "train_seen-fix-to-en-1",
+      "direction": "fix-to-en",
+      "input": "tone wachi",
+      "source_candidates": [
+        "eleven"
+      ],
+      "raw_outputs": {
+        "base": "tone wachi / tone-wachi",
+        "v1": "tone",
+        "v2": "twelve"
+      },
+      "source_candidate_set_equal": {
+        "base": false,
+        "v1": false,
+        "v2": false
+      },
+      "seen_in_training": true,
+      "source_annotation_status": "unreviewed_bounded_lexical_mapping",
+      "source_rights_status": "game_derived_not_eligible"
+    },
+    {
+      "id": "train_seen-en-to-fix-1",
+      "direction": "en-to-fix",
+      "input": "wait a moment",
+      "source_candidates": [
+        "wE-MitTa"
+      ],
+      "raw_outputs": {
+        "base": "wait a moment",
+        "v1": "WaiT",
+        "v2": "wE-MitTa"
+      },
+      "source_candidate_set_equal": {
+        "base": false,
+        "v1": false,
+        "v2": true
+      },
+      "seen_in_training": true,
+      "source_annotation_status": "unreviewed_bounded_lexical_mapping",
+      "source_rights_status": "game_derived_not_eligible"
+    }
+  ],
+  "validation_losses": {
+    "original_base": {
+      "fix": 11.098934173583984,
+      "wordnet": 5.309939384460449
+    },
+    "v1_selected": {
+      "fix": 3.254272699356079,
+      "wordnet": 1.9898017644882202
+    },
+    "v2_selected": {
+      "fix": 4.049633026123047,
+      "wordnet": 2.123688220977783
+    }
+  },
+  "tradeoff": {
+    "train_seen_source_agreement_improved": true,
+    "heldout_source_agreement_improved": false,
+    "v2_selected_fix_validation_loss_worse_than_v1": true,
+    "v2_selected_WordNet_validation_loss_worse_than_v1": true,
+    "interpretation": "better_seen_mapping_fit_with_worse_validation_loss_consistent_with_overfitting",
+    "blanket_quality_improvement_established": false
+  },
+  "general_language_controls": {
+    "records": [
+      {
+        "id": "authored-1",
+        "direction": "en-to-ja",
+        "input": "The cat is sleeping.",
+        "raw_outputs": {
+          "base": "猫は寝ています。",
+          "v1": "猫は寝ています",
+          "v2": "猫が寝ている"
+        },
+        "non_exhaustive_authored_reference_alternatives": [
+          "猫は寝ています。",
+          "猫が寝ています。",
+          "猫は眠っています。",
+          "猫が眠っています。"
+        ],
+        "authored_reference_string_equal": {
+          "base": true,
+          "v1": false,
+          "v2": false
+        },
+        "manual_semantic_review": "same_core_meaning_topic_to_subject_marker_and_polite_to_plain_register",
+        "meaning_loss_observed_in_this_example": false
+      },
+      {
+        "id": "authored-2",
+        "direction": "en-to-ja",
+        "input": "I have two books.",
+        "raw_outputs": {
+          "base": "私は2冊の本を持っています。",
+          "v1": "私は2冊の本を持っています",
+          "v2": "私は2冊の本を持っている"
+        },
+        "non_exhaustive_authored_reference_alternatives": [
+          "私は本を2冊持っています。",
+          "私は本を二冊持っています。",
+          "本を2冊持っています。",
+          "本を二冊持っています。"
+        ],
+        "authored_reference_string_equal": {
+          "base": false,
+          "v1": false,
+          "v2": false
+        },
+        "manual_semantic_review": "same_core_meaning_valid_word_order_polite_to_plain_register",
+        "meaning_loss_observed_in_this_example": false
+      },
+      {
+        "id": "authored-3",
+        "direction": "ja-to-en",
+        "input": "これは本です。",
+        "raw_outputs": {
+          "base": "This is a book.",
+          "v1": "This is a book.",
+          "v2": "This is a book."
+        },
+        "non_exhaustive_authored_reference_alternatives": [
+          "This is a book."
+        ],
+        "authored_reference_string_equal": {
+          "base": true,
+          "v1": true,
+          "v2": true
+        },
+        "manual_semantic_review": "byte_identical",
+        "meaning_loss_observed_in_this_example": false
+      },
+      {
+        "id": "authored-4",
+        "direction": "ja-to-en",
+        "input": "猫が寝ています。",
+        "raw_outputs": {
+          "base": "The cat is sleeping.",
+          "v1": "The cat is sleeping.",
+          "v2": "The cat is sleeping."
+        },
+        "non_exhaustive_authored_reference_alternatives": [
+          "The cat is sleeping.",
+          "A cat is sleeping.",
+          "The cat is asleep.",
+          "A cat is asleep."
+        ],
+        "authored_reference_string_equal": {
+          "base": true,
+          "v1": true,
+          "v2": true
+        },
+        "manual_semantic_review": "byte_identical",
+        "meaning_loss_observed_in_this_example": false
+      }
+    ],
+    "reviewed_cases": 4,
+    "meaning_loss_observed_in_reviewed_cases": 0,
+    "style_or_register_drift_observed": true,
+    "global_translation_quality_preservation_established": false,
+    "exact_string_mismatch_proves_semantic_regression": false
+  },
+  "integrity": {
+    "protected_files_sha256_unchanged": {
+      "original_base": 12,
+      "wordnet_adapter": 15,
+      "phase1_fix_adapter": 16
+    },
+    "new_adapter_weight": {
+      "bytes": 66126768,
+      "sha256": "2bcd148d1dcf9d88cb44c444d69343b74bb474c2e3b1f9e73d272b95643f0377"
+    },
+    "new_adapter_differs_from_initial": true,
+    "optimizer_steps": 192,
+    "initialization": {
+      "initial_adapter_path": "/home/user/code/fiXmArge-translator/artifacts/qwen3-4b-fixmarge-wordnet-lora-v1",
+      "initial_adapter_sha256": "c2acaf0fdf69578f0bb7ac7dccc01f85d506a0a2264c5c3c5d74552b0cb8e79f",
+      "initial_adapter_source_optimizer_steps": 128,
+      "initial_global_step": 0,
+      "optimizer_state_reused": false,
+      "scheduler_state_reused": false,
+      "baseline_model": "original_base_plus_initial_adapter"
+    },
+    "base_frozen": true,
+    "merge_performed": false,
+    "tensor_count": 504,
+    "parameter_count": 16515072,
+    "b_tensors": 252,
+    "nonzero_b_tensors": 252
+  },
+  "assessment_limits": {
+    "source_dictionary_is_official_gold": false,
+    "translation_accuracy": null,
+    "training_probe_fit_proves_unseen_generalization": false,
+    "heldout_mismatch_proves_incorrect_translation": false,
+    "lexical_loss_is_sentence_translation_accuracy": false
+  },
+  "sentence_comparison": {
+    "status": "completed",
+    "local_record": "runs/fixmarge-wordnet-lora-2026-11-07/sentence-comparison-v2.json",
+    "source_text": "sINeEy Iz'u Nii riEl",
+    "independent_sentences": 1,
+    "target_directions": 3,
+    "source_provenance": {
+      "source": "secondary_fan_wordbook",
+      "file": "data/raw/japanese_wordbook.xlsx",
+      "sha256": "2b29b1cf34e13da278f5c563c5fdcd6ef12fbd8c69252df24d1c1391cd646605",
+      "sheet": "単語帳",
+      "cell": "G273",
+      "linked_primary_url": "https://www.youtube.com/watch?v=AIeAZ_qtdJ4",
+      "primary_snapshot_present": false,
+      "official_parallel_translation_present": false,
+      "fan_interpretation_in_prompt": false
+    },
+    "configuration": {
+      "precision": "NF4",
+      "do_sample": false,
+      "seed": 0,
+      "max_new_tokens": 384,
+      "allow_download": false,
+      "dictionary_context": "identical_between_base_and_lora",
+      "base_pass": "before_adapter_attachment"
+    },
+    "base_schema_valid_cases": 3,
+    "v2_schema_valid_cases": 1,
+    "schema_cases_per_model": 3,
+    "rows": [
+      {
+        "direction": "fix-to-ja",
+        "prompt_sha256": "8572ae1fed385c905072b26be65ecf7c7446b64f5a42248cd0a6f6da2a67d09b",
+        "base": {
+          "raw_output": "{\n  \"tentative_translation\": \"姉は違う\",\n  \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"],\n  \"uncertainties\": [\n    \"The form 'sINeEy' as '姉？' is unreviewed and derived from game content; its use as a proper noun or interrogative is ambiguous.\",\n    \"The connector 'Iz'u' has multiple interpretations ('～は', '～が', '～は～である'); the grammatical role is unresolved.\",\n    \"The sense of 'Nii' as '違う' (different) conflicts with 'ない' (no) and 'いや' (no, I don't), suggesting possible ambiguity in negation or contrast.\",\n    \"The translation '姉は違う' is a machine paraphrase based on lexical matches and English glosses; it lacks verified sentence-level validation or context.\"\n  ]\n}",
+          "schema_valid": true,
+          "tentative_translation": "姉は違う",
+          "display_text": "姉は違う",
+          "display_origin": "tentative_translation_field"
+        },
+        "v2": {
+          "raw_output": "姉は帰る",
+          "schema_valid": false,
+          "tentative_translation": null,
+          "display_text": "姉は帰る",
+          "display_origin": "raw_unparsed_text"
+        }
+      },
+      {
+        "direction": "fix-to-en",
+        "prompt_sha256": "862cdf51f69277ffad0d27859ccd653a4f65042cd45e51e716e16eea9e361780",
+        "base": {
+          "raw_output": "{\n  \"tentative_translation\": \"Sister is not different\",\n  \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"],\n  \"uncertainties\": [\n    \"The form 'sINeEy' is not clearly defined in English; possible reference to a name or a misrendered word.\",\n    \"The word 'riEl' has a known meaning in Cambodian currency, but its use in a sentence with 'Nii' is ambiguous without context.\",\n    \"The grammatical structure and intended meaning of 'Iz'u' as 'is' or 'to be' are unclear without full syntactic context.\",\n    \"The sense of 'Nii' as 'different', 'no', or 'not' creates ambiguity; the sentence may be negated or comparative.\"\n  ]\n}",
+          "schema_valid": true,
+          "tentative_translation": "Sister is not different",
+          "display_text": "Sister is not different",
+          "display_origin": "tentative_translation_field"
+        },
+        "v2": {
+          "raw_output": "{ \"tentative_translation\": \"is not sister\", \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"], \"uncertainties\": [\"ambiguous\", \"unverified_sentence\"] }",
+          "schema_valid": true,
+          "tentative_translation": "is not sister",
+          "display_text": "is not sister",
+          "display_origin": "tentative_translation_field"
+        }
+      },
+      {
+        "direction": "fix-to-ko",
+        "prompt_sha256": "eeb05cf7d227ffd39efa95d46238c0e4741fee2de39d9e2a9228b6ea34c21f50",
+        "base": {
+          "raw_output": "{\n  \"tentative_translation\": null,\n  \"evidence_ids\": [\n    \"fx-84a7955ffac17756\",\n    \"fx-f151c99a460401fc\",\n    \"fx-2b8bacf36013f2d7\",\n    \"fx-c1ad1fc9048451ef\"\n  ],\n  \"uncertainties\": [\n    \"No verified Korean equivalents found for 'sINeEy' in the dictionary.\",\n    \"Ambiguous use of 'Iz'u' as 'is' or 'to be' without grammatical context.\",\n    \"Nii is interpreted as 'different', 'no', or 'not' but lacks clear syntactic role.\",\n    \"riEl is glossed as 'return' in Japanese but no clear connection to a Korean phrase.\",\n    \"No cross-lingual alignment or sentence structure verification available.\"\n  ]\n}",
+          "schema_valid": true,
+          "tentative_translation": null,
+          "display_text": null,
+          "display_origin": "tentative_translation_field"
+        },
+        "v2": {
+          "raw_output": "다른가",
+          "schema_valid": false,
+          "tentative_translation": null,
+          "display_text": "다른가",
+          "display_origin": "raw_unparsed_text"
+        }
+      }
+    ],
+    "training_coverage": {
+      "full_sentence_supervised": false,
+      "verified_grammar_supervised": false,
+      "tokens": [
+        {
+          "form": "sINeEy",
+          "direct_JA_senses": [
+            "姉？"
+          ],
+          "direct_EN_senses": [],
+          "training_included": false,
+          "exclusion": "explicitly_uncertain_entry"
+        },
+        {
+          "form": "Iz'u",
+          "training_included": false,
+          "exclusion": "conflicted_entry"
+        },
+        {
+          "form": "Nii",
+          "training_included": false,
+          "exclusion": "conflicted_entry"
+        },
+        {
+          "form": "riEl",
+          "direct_JA_senses": [
+            "帰る"
+          ],
+          "direct_EN_senses": [],
+          "training_included": true,
+          "split": "train",
+          "unique_directional_records": 2,
+          "v2_repeated_directional_records": 8
+        }
+      ],
+      "related_distinct_canonical_form": {
+        "form": "rIEl",
+        "direct_JA_senses": [
+          "帰る",
+          "帰った"
+        ],
+        "direct_EN_senses": [
+          "return home"
+        ],
+        "split": "train",
+        "shares_direct_EN_sense_with_exact_riEl": false
+      }
+    },
+    "observations": {
+      "japanese_raw_return_sense_expressed": true,
+      "japanese_raw_negation_expressed": false,
+      "japanese_raw_is_valid_JSON_contract": false,
+      "Korean_raw_is_valid_JSON_contract": false,
+      "English_and_Korean_sentence_reliability_established": false,
+      "sentence_grammar_verified": false,
+      "source_to_output_alignment_verified": false,
+      "sentence_translation_improvement_demonstrated": false,
+      "JSON_contract_regression_observed": true
+    },
+    "integrity": {
+      "base_weights_sha256_unchanged": true,
+      "adapter_weights_sha256_unchanged": true,
+      "adapter_sha256": "2bcd148d1dcf9d88cb44c444d69343b74bb474c2e3b1f9e73d272b95643f0377",
+      "merge_performed": false
+    },
+    "sentence_translation_accuracy": null
+  },
+  "local_audit_records": {
+    "v1": "runs/fixmarge-wordnet-lora-2026-11-07/lexical-comparison.json",
+    "v2": "runs/fixmarge-wordnet-lora-2026-11-07/lexical-comparison-v2.json",
+    "integrity": "runs/fixmarge-wordnet-lora-2026-11-07/integrity-after-v2.json"
+  },
+  "downloads": 0,
+  "merge_performed": false,
+  "deployment_decision": {
+    "local_demo_adapter": "artifacts/qwen3-4b-wordnet-en-ja-lora-v1",
+    "retained_existing_WordNet_demo_adapter": true,
+    "new_trained_v2_saved_locally": true,
+    "new_trained_v2_enabled_by_default": false,
+    "new_trained_HF_upload_performed": false,
+    "basis": [
+      "sentence_JSON_contract_regression",
+      "sentence_gain_not_demonstrated"
+    ],
+    "base_model_files_or_existing_adapters_overwritten": false
+  },
+  "reproduction": {
+    "requires_existing_cache_and_local_corpus": true,
+    "lexical": {
+      "script": "scripts/evaluate_fixmarge_adapter.py",
+      "train": "data/training/fixmarge-wordnet-v2/train.jsonl",
+      "test": "data/training/fixmarge-wordnet-v2/test.jsonl",
+      "adapter": "artifacts/qwen3-4b-fixmarge-wordnet-lora-v2",
+      "max_new_tokens": 32,
+      "generate": true,
+      "output": "runs/fixmarge-wordnet-lora-2026-11-07/lexical-comparison-v2-repro.json"
+    },
+    "sentence": {
+      "script": "scripts/compare_fixmarge_sentences.py",
+      "adapter": "artifacts/qwen3-4b-fixmarge-wordnet-lora-v2",
+      "max_new_tokens": 384,
+      "generate": true,
+      "output": "runs/fixmarge-wordnet-lora-2026-11-07/sentence-comparison-v2-repro.json"
+    }
+  }
+}

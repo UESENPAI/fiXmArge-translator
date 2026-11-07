@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "wnja": {
+      "version": "1.1",
+      "origin": "https://github.com/bond-lab/wnja/releases/download/v1.1/wnjpn.db.gz",
+      "sha256": "64a14dcfe3ba296566e91a70a2fc0616e85cf2ee7b7fd8cdcbc66c8b12a505a5",
+      "bytes": 60390049,
+      "locked_at": "2026-11-05T11:51:48.206375+00:00",
+      "verification": "first-download lock (TOFU); no independently published checksum supplied"
+    },
+    "oewn": {
+      "version": "2025",
+      "origin": "https://en-word.net/static/english-wordnet-2025.xml.gz",
+      "sha256": "9ca6d1dcb75f822fdd66617f7d9da48142ace38dd544d6ad5e2feca1674ad3fe",
+      "bytes": 11363503,
+      "locked_at": "2026-11-05T12:02:05.073214+00:00",
+      "verification": "first-download lock (TOFU); no independently published checksum supplied"
+    }
+  },
+  "license_notices": {
+    "Japanese-WordNet.txt": {
+      "source_url": "https://raw.githubusercontent.com/bond-lab/wnja/7ad6d75bda9a94fe208d6aa083b55baf891100b1/LICENSE",
+      "sha256": "9a057042d5319fed0d29abdf7f9e22b01047cea3073da24ec33585d7ce8568a6",
+      "method": "download"
+    },
+    "Princeton-WordNet.txt": {
+      "source_url": "https://wordnet.princeton.edu/license-and-commercial-use",
+      "sha256": "2efb4d98210e077f03472575fcfaa9ccd77a283d67205108f7a4869577cdada8",
+      "method": "reviewed official notice transcription (2026-11-05)"
+    },
+    "Open-English-WordNet.md": {
+      "source_url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/2025-edition/LICENSE.md",
+      "sha256": "672cc8b5663e8dc74c4b07a9dcf477193853575b119908fd3dc0aeeb60a9dbbb",
+      "method": "download"
+    },
+    "OEWN-WNDB-License.txt": {
+      "source_url": "https://raw.githubusercontent.com/globalwordnet/english-wordnet/2025-edition/WNDB_License.txt",
+      "sha256": "df30ec18fbabcdaf031b79ea026d3e6b959010cffe6dd7be9ac137822175b904",
+      "method": "download"
+    }
+  }
+}

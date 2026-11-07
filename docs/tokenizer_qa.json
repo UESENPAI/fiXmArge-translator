@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-11-05",
+  "models": [
+    {
+      "id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+    },
+    {
+      "id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    }
+  ],
+  "samples": 6,
+  "languages": [
+    "ko",
+    "ja",
+    "en"
+  ],
+  "checks": [
+    "answer preserved",
+    "prompt excluded from loss",
+    "EOS supervised"
+  ],
+  "result": "passed",
+  "raw_run_sha256": "fd0985b19864e8e8a6d167f95b52982c00b15446fc3f5fe457fc4f1fd74c1664",
+  "weights_downloaded": false,
+  "gpu_training_run": false
+}

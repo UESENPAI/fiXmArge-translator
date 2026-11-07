@@ -1,0 +1,448 @@
+# fiXmArge · Coword · sinruits
+
+```json
+{
+  "date": "2026-11-07",
+  "strategy": "dictionary_first_RAG",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "adapter": null,
+  "precision": "NF4",
+  "allow_download": false,
+  "downloads": 0,
+  "http_attempts": [],
+  "training_performed": false,
+  "tests_passed": 266,
+  "protected_files_sha256_unchanged": 48,
+  "forbidden_routes_blocked": 10,
+  "retrieval_checks": {
+    "domain_segments": 4,
+    "standard_entries": 13,
+    "query_policy": {
+      "include_input": false,
+      "exact_spelling_filter": "fiXmArge_gloss_only"
+    },
+    "raw_fix_queries_absent": true,
+    "currency_and_chemical_noise_absent": true,
+    "grammar": {
+      "retrieved_rules_count": 0,
+      "sentence_grammar_verified": false,
+      "status": "no_retrieved_rules"
+    }
+  },
+  "cases": [
+    {
+      "source_text": "sinruits",
+      "source_language": "fix",
+      "target_language": "en",
+      "displayed_output": "truth",
+      "answer_source": "dictionary",
+      "generation_performed": false,
+      "query_rewrite_performed": false,
+      "dictionary_answer": {
+        "translation": "truth",
+        "evidence_ids": [
+          "fx-582a1cecf6b4f969"
+        ],
+        "scope": "single_lexical",
+        "sentence_verified": false,
+        "source_review_verified": false
+      },
+      "abstention_reason": null,
+      "direct_lexical_segments": 1,
+      "unmatched_source_spans": [],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": null,
+      "query_translation_verified": false,
+      "raw_model_output": null,
+      "schema_valid": null,
+      "model_uncertainties": null,
+      "model_domain_evidence_ids": null,
+      "model_indirect_evidence_ids": null,
+      "unsupported_output_spans": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "niNeEr",
+      "source_language": "fix",
+      "target_language": "ja",
+      "displayed_output": "兄",
+      "answer_source": "dictionary",
+      "generation_performed": false,
+      "query_rewrite_performed": false,
+      "dictionary_answer": {
+        "translation": "兄",
+        "evidence_ids": [
+          "fx-5828194a6f06330d"
+        ],
+        "scope": "single_lexical",
+        "sentence_verified": false,
+        "source_review_verified": false
+      },
+      "abstention_reason": null,
+      "direct_lexical_segments": 1,
+      "unmatched_source_spans": [],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": null,
+      "query_translation_verified": false,
+      "raw_model_output": null,
+      "schema_valid": null,
+      "model_uncertainties": null,
+      "model_domain_evidence_ids": null,
+      "model_indirect_evidence_ids": null,
+      "unsupported_output_spans": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "tone wachi",
+      "source_language": "fix",
+      "target_language": "en",
+      "displayed_output": "eleven",
+      "answer_source": "dictionary",
+      "generation_performed": false,
+      "query_rewrite_performed": false,
+      "dictionary_answer": {
+        "translation": "eleven",
+        "evidence_ids": [
+          "fx-4761591a59bbc33d"
+        ],
+        "scope": "single_lexical",
+        "sentence_verified": false,
+        "source_review_verified": false
+      },
+      "abstention_reason": null,
+      "direct_lexical_segments": 1,
+      "unmatched_source_spans": [],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": null,
+      "query_translation_verified": false,
+      "raw_model_output": null,
+      "schema_valid": null,
+      "model_uncertainties": null,
+      "model_domain_evidence_ids": null,
+      "model_indirect_evidence_ids": null,
+      "unsupported_output_spans": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "wait a moment",
+      "source_language": "en",
+      "target_language": "fix",
+      "displayed_output": "wE-MitTa",
+      "answer_source": "dictionary",
+      "generation_performed": false,
+      "query_rewrite_performed": false,
+      "dictionary_answer": {
+        "translation": "wE-MitTa",
+        "evidence_ids": [
+          "fx-f1951922be72c3ff"
+        ],
+        "scope": "single_lexical",
+        "sentence_verified": false,
+        "source_review_verified": false
+      },
+      "abstention_reason": null,
+      "direct_lexical_segments": 1,
+      "unmatched_source_spans": [],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": null,
+      "query_translation_verified": false,
+      "raw_model_output": null,
+      "schema_valid": null,
+      "model_uncertainties": null,
+      "model_domain_evidence_ids": null,
+      "model_indirect_evidence_ids": null,
+      "unsupported_output_spans": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "zzzz_no_attested_form",
+      "source_language": "fix",
+      "target_language": "en",
+      "displayed_output": "MeMe · ∅ · ⚠",
+      "answer_source": "abstained",
+      "generation_performed": false,
+      "query_rewrite_performed": false,
+      "dictionary_answer": null,
+      "abstention_reason": "no_fiXmArge_dictionary_evidence",
+      "direct_lexical_segments": 0,
+      "unmatched_source_spans": [
+        {
+          "text": "zzzz_no_attested_form",
+          "start": 0,
+          "end": 21
+        }
+      ],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": null,
+      "query_translation_verified": false,
+      "raw_model_output": null,
+      "schema_valid": null,
+      "model_uncertainties": null,
+      "model_domain_evidence_ids": null,
+      "model_indirect_evidence_ids": null,
+      "unsupported_output_spans": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "sINeEy Iz'u Nii riEl",
+      "source_language": "fix",
+      "target_language": "ja",
+      "displayed_output": "姉？は違う",
+      "answer_source": "model_with_dictionary",
+      "generation_performed": true,
+      "query_rewrite_performed": false,
+      "dictionary_answer": null,
+      "abstention_reason": null,
+      "direct_lexical_segments": 4,
+      "unmatched_source_spans": [],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": null,
+      "query_translation_verified": false,
+      "raw_model_output": "{\n  \"tentative_translation\": \"姉？は違う\",\n  \"evidence_ids\": [\n    \"fx-84a7955ffac17756\",\n    \"fx-f151c99a460401fc\",\n    \"fx-2b8bacf36013f2d7\",\n    \"fx-c1ad1fc9048451ef\"\n  ],\n  \"uncertainties\": [\n    \"The connection between 'sINeEy' and '姉？' is unverified and context-dependent.\",\n    \"The grammatical structure of 'Iz'u' as 'は' or 'が' is ambiguous without full sentence context.\",\n    \"The meaning of 'Nii' as '違う' (different) is plausible but not exclusively supported; 'ない' or 'いや' are also valid interpretations.\",\n    \"The phrase 'riEl' as '帰る' is valid, but the full sentence structure remains unverified due to lack of cross-linguistic alignment.\"\n  ]\n}",
+      "schema_valid": true,
+      "model_uncertainties": [
+        "The connection between 'sINeEy' and '姉？' is unverified and context-dependent.",
+        "The grammatical structure of 'Iz'u' as 'は' or 'が' is ambiguous without full sentence context.",
+        "The meaning of 'Nii' as '違う' (different) is plausible but not exclusively supported; 'ない' or 'いや' are also valid interpretations.",
+        "The phrase 'riEl' as '帰る' is valid, but the full sentence structure remains unverified due to lack of cross-linguistic alignment."
+      ],
+      "model_domain_evidence_ids": [
+        "fx-84a7955ffac17756",
+        "fx-f151c99a460401fc",
+        "fx-2b8bacf36013f2d7",
+        "fx-c1ad1fc9048451ef"
+      ],
+      "model_indirect_evidence_ids": [],
+      "unsupported_output_spans": [],
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "sINeEy Iz'u Nii riEl",
+      "source_language": "fix",
+      "target_language": "en",
+      "displayed_output": "SineEy is not different",
+      "answer_source": "model_with_dictionary",
+      "generation_performed": true,
+      "query_rewrite_performed": false,
+      "dictionary_answer": null,
+      "abstention_reason": null,
+      "direct_lexical_segments": 4,
+      "unmatched_source_spans": [],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": null,
+      "query_translation_verified": false,
+      "raw_model_output": "{\n  \"tentative_translation\": \"SineEy is not different\",\n  \"evidence_ids\": [\n    \"fx-84a7955ffac17756\",\n    \"fx-f151c99a460401fc\",\n    \"fx-2b8bacf36013f2d7\",\n    \"fx-c1ad1fc9048451ef\"\n  ],\n  \"uncertainties\": [\n    \"The form 'sINeEy' has no English gloss and is only attested in Japanese context as 'sister?' — its intended meaning is ambiguous.\",\n    \"The word 'Iz'u' has multiple senses including 'is' and 'to be', but context is missing to determine if it's a verb or a copula.\",\n    \"The sense of 'Nii' as 'different', 'no', 'not', or 'don't' is conflicting; the intended negation or comparison is unclear without grammatical or contextual support.\",\n    \"The word 'riEl' is glossed as 'return' in Japanese, but its role in the sentence (e.g., object, verb, or complement) is unverified and not aligned with the rest of the structure.\"\n  ]\n}",
+      "schema_valid": true,
+      "model_uncertainties": [
+        "The form 'sINeEy' has no English gloss and is only attested in Japanese context as 'sister?' — its intended meaning is ambiguous.",
+        "The word 'Iz'u' has multiple senses including 'is' and 'to be', but context is missing to determine if it's a verb or a copula.",
+        "The sense of 'Nii' as 'different', 'no', 'not', or 'don't' is conflicting; the intended negation or comparison is unclear without grammatical or contextual support.",
+        "The word 'riEl' is glossed as 'return' in Japanese, but its role in the sentence (e.g., object, verb, or complement) is unverified and not aligned with the rest of the structure."
+      ],
+      "model_domain_evidence_ids": [
+        "fx-84a7955ffac17756",
+        "fx-f151c99a460401fc",
+        "fx-2b8bacf36013f2d7",
+        "fx-c1ad1fc9048451ef"
+      ],
+      "model_indirect_evidence_ids": [],
+      "unsupported_output_spans": [],
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "sINeEy Iz'u Nii riEl",
+      "source_language": "fix",
+      "target_language": "ko",
+      "displayed_output": "MeMe · ∅ · ⚠",
+      "answer_source": "model_with_dictionary",
+      "generation_performed": true,
+      "query_rewrite_performed": false,
+      "dictionary_answer": null,
+      "abstention_reason": null,
+      "direct_lexical_segments": 4,
+      "unmatched_source_spans": [],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": null,
+      "query_translation_verified": false,
+      "raw_model_output": "{\n  \"tentative_translation\": null,\n  \"evidence_ids\": [\"fx-84a7955ffac17756\", \"fx-f151c99a460401fc\", \"fx-2b8bacf36013f2d7\", \"fx-c1ad1fc9048451ef\"],\n  \"uncertainties\": [\n    \"No Korean glosses found for 'sINeEy'; lexical match only in Japanese (sister?) with no verified equivalent.\",\n    \"Iz'u is interpreted as 'is' or 'to be' but no clear syntactic role or subject in Korean context.\",\n    \"Nii has multiple meanings: 'different', 'no', 'not', 'don't need' — ambiguous in context.\",\n    \"riEl is glossed as 'return' in Japanese, but no clear grammatical or semantic connection to the others.\",\n    \"No verified sentence structure or grammar rules found; cannot reconstruct a meaningful Korean sentence.\"\n  ]\n}",
+      "schema_valid": true,
+      "model_uncertainties": [
+        "No Korean glosses found for 'sINeEy'; lexical match only in Japanese (sister?) with no verified equivalent.",
+        "Iz'u is interpreted as 'is' or 'to be' but no clear syntactic role or subject in Korean context.",
+        "Nii has multiple meanings: 'different', 'no', 'not', 'don't need' — ambiguous in context.",
+        "riEl is glossed as 'return' in Japanese, but no clear grammatical or semantic connection to the others.",
+        "No verified sentence structure or grammar rules found; cannot reconstruct a meaningful Korean sentence."
+      ],
+      "model_domain_evidence_ids": [
+        "fx-84a7955ffac17756",
+        "fx-f151c99a460401fc",
+        "fx-2b8bacf36013f2d7",
+        "fx-c1ad1fc9048451ef"
+      ],
+      "model_indirect_evidence_ids": [],
+      "unsupported_output_spans": [],
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "진실",
+      "source_language": "ko",
+      "target_language": "fix",
+      "displayed_output": "MeMe · ∅ · ⚠",
+      "answer_source": "abstained",
+      "generation_performed": true,
+      "query_rewrite_performed": true,
+      "dictionary_answer": null,
+      "abstention_reason": "no_fiXmArge_dictionary_evidence",
+      "direct_lexical_segments": 0,
+      "unmatched_source_spans": [
+        {
+          "text": "진실",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "indirect_dictionary_queries": [],
+      "indirect_dictionary_forms": [],
+      "raw_query_output": "{\"language\": \"ja\", \"text\": \"真実\"}",
+      "query_translation_verified": false,
+      "raw_model_output": null,
+      "schema_valid": null,
+      "model_uncertainties": null,
+      "model_domain_evidence_ids": null,
+      "model_indirect_evidence_ids": null,
+      "unsupported_output_spans": null,
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    },
+    {
+      "source_text": "진실",
+      "source_language": "ko",
+      "target_language": "fix",
+      "displayed_output": "sinRuit",
+      "answer_source": "model_with_dictionary",
+      "generation_performed": true,
+      "query_rewrite_performed": true,
+      "dictionary_answer": null,
+      "abstention_reason": null,
+      "direct_lexical_segments": 0,
+      "unmatched_source_spans": [
+        {
+          "text": "진실",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "indirect_dictionary_queries": [
+        {
+          "language": "ja",
+          "text": "真実"
+        },
+        {
+          "language": "en",
+          "text": "truth"
+        }
+      ],
+      "indirect_dictionary_forms": [
+        "sinRuit",
+        "sinruits"
+      ],
+      "raw_query_output": "{\"queries\": [{\"language\": \"ja\", \"text\": \"真実\"}, {\"language\": \"en\", \"text\": \"truth\"}]}",
+      "query_translation_verified": false,
+      "raw_model_output": "{\n  \"tentative_translation\": \"sinRuit\",\n  \"evidence_ids\": [\n    \"fx-1bf8a0b7ccbe7a43\",\n    \"fx-582a1cecf6b4f969\"\n  ],\n  \"uncertainties\": [\n    \"The grammar and sentence context are not verified due to lack of retrieved rules or sentence-level evidence.\",\n    \"The form 'sinRuit' is derived from indirect dictionary matches and may not reflect native fiXmArge usage or correct inflection.\",\n    \"The alignment between Korean '진실' and fiXmArge form is unverified; the form is a lexical candidate, not a confirmed translation.\"\n  ]\n}",
+      "schema_valid": true,
+      "model_uncertainties": [
+        "The grammar and sentence context are not verified due to lack of retrieved rules or sentence-level evidence.",
+        "The form 'sinRuit' is derived from indirect dictionary matches and may not reflect native fiXmArge usage or correct inflection.",
+        "The alignment between Korean '진실' and fiXmArge form is unverified; the form is a lexical candidate, not a confirmed translation."
+      ],
+      "model_domain_evidence_ids": [],
+      "model_indirect_evidence_ids": [
+        "fx-1bf8a0b7ccbe7a43",
+        "fx-582a1cecf6b4f969"
+      ],
+      "unsupported_output_spans": [],
+      "sentence_verified": false,
+      "output_source_alignment_verified": false
+    }
+  ],
+  "korean_query_prompt_revision": "explicit_outer_queries_shape_after_initial_bare_object_abstention",
+  "sentence_provenance": {
+    "independent_attested_inputs": 1,
+    "source": "secondary_fan_wordbook_quote",
+    "file": "data/raw/japanese_wordbook.xlsx",
+    "sheet": "単語帳",
+    "cell": "G273",
+    "linked_primary_url": "https://www.youtube.com/watch?v=AIeAZ_qtdJ4",
+    "primary_snapshot_present": false,
+    "official_parallel_translation_present": false,
+    "fan_interpretation_in_prompt": false,
+    "grammar_rules_retrieved": 0
+  },
+  "limitations": [
+    "source_dictionary_unreviewed_conflicts_retained",
+    "direct_lexical_output_measures_dictionary_consistency_not_sentence_accuracy",
+    "changed_retrieval_and_output_does_not_establish_sentence_translation_improvement",
+    "Korean_query_paraphrases_are_machine_generated_not_direct_Korean_glosses",
+    "registered_output_spelling_does_not_verify_source_alignment",
+    "synthetic_unknown_input_is_a_negative_control_not_an_attested_fiXmArge_sentence"
+  ],
+  "sentence_translation_accuracy": null,
+  "sentence_translation_improvement": "not_established",
+  "demo_api": {
+    "url": "http://127.0.0.1:7860",
+    "title": "fiXmArge · ConWas",
+    "closed_details": true,
+    "cases": [
+      {
+        "input": "niNeEr",
+        "source": "fix",
+        "target": "ja",
+        "output": "兄",
+        "answer_source": "dictionary",
+        "query_rewrite_performed": false,
+        "generation_performed": false,
+        "adapter_loaded": false,
+        "sentence_verified": false
+      },
+      {
+        "input": "zzzz_no_attested_form",
+        "source": "fix",
+        "target": "en",
+        "output": "MeMe · ∅ · ⚠",
+        "answer_source": "abstained",
+        "query_rewrite_performed": false,
+        "generation_performed": false,
+        "adapter_loaded": false,
+        "sentence_verified": false
+      },
+      {
+        "input": "진실",
+        "source": "ko",
+        "target": "fix",
+        "output": "sinRuit",
+        "answer_source": "model_with_dictionary",
+        "query_rewrite_performed": true,
+        "generation_performed": true,
+        "adapter_loaded": false,
+        "sentence_verified": false
+      }
+    ]
+  }
+}
+```
